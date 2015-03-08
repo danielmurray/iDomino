@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Myriad Set Pro';
+    src: url('../imgs/myriad-pro/myriad-set-pro_regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Set Pro';
+    src: url('../imgs/myriad-pro/myriad-set-pro_light.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{ 
+    position:relative;
+    font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;;
+    font-weight: 200;
+    color: whitesmoke;
+    -webkit-user-select: none; 
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+body.site{
+    height: 100%;
+    width:100%;
+    position:relative;
+    z-index: -10;
+}
+
+#viewport{
+  margin: 0 auto;
+  background-color: #ffffff
+}
+
+.header-wrapper{
+  height: 46px;
+  margin: 0 auto 1px;
+  background: #444;
+  background: rgba(0,0,0,0.6);
+}
+
+/********** Global Header **********/
+
+.header{
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+  display: block;
+}
+
+.header .nav-list{
+  list-style-type:none;
+  height:30px;
+  height: 100%;
+  width: 100%;
+  display: table;   /* updated */
+}
+
+.header .nav-list li{
+  cursor: pointer;
+
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;  /* updated */  
+}
+
+.header .nav-list li span{
+  font-size: 16px;
+
+  opacity: 1;
+  -webkit-transition-property: opacity;
+     -moz-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+  -webkit-transition-duration: 0.1s;
+     -moz-transition-duration: 0.1s;
+       -o-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.header .nav-list li span:hover{
+  opacity: 0.65;
+}
+
+.header .nav-list .logo{
+  height: 30px;
+}
+
+/********** Main **********/
+
+.main{
+  height: 100%;
+  width: 100%;
+  width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: black;
+}
+
+.local-header{
+  height: 50px;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  clear: both;
+}
+
+.local-header h2{
+  -webkit-background-size: 102px 24px;
+  -webkit-font-smoothing: antialiased;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 102px 24px;
+  cursor: auto;
+  display: block;
+  float: left;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 200;
+  height: 24px;
+  line-height: 32px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-decoration: none;
+}
+
+.local-header div{
+  float: right;
+}
+
+.local-header .explore-btn{
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgb(0, 136, 204);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(0, 136, 204);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(0, 136, 204);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(0, 136, 204);
+  border-top-style: none;
+  border-top-width: 0px;
+  color: rgb(0, 136, 204);
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  height: 32px;
+  line-height: 32px;
+  outline-color: rgb(0, 136, 204);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 3px;
+  padding-top: 0px;
+  position: relative;
+  text-align: left;
+  top: 12px;
+  width: 68.4375px;
+  z-index: 1;
+}
+
+.local-header .explore-btn span{
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  display: inline;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  height: auto;
+  line-height: 32px;
+  margin-right: 26px;
+  text-align: right;
+  width: auto;
+}
+
+.local-header .explore-btn .grid{
+  webkit-backface-visibility: hidden;
+  -webkit-background-size: 13px 13px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease;
+  -webkit-user-select: none;
+  backface-visibility: hidden;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  color: rgb(0, 136, 204);
+  cursor: pointer;
+  display: block;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  height: 13px;
+  line-height: 32px;
+  opacity: 0.600000023841858;
+  position: absolute;
+  right: 3px;
+  text-align: left;
+  top: 9px;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease;
+  width: 13px;
+  z-index: 1;
+}
+.local-header .buy-btn{
+  margin: 16px 0 0 25px;
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-font-smoothing: antialiased;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(rgb(59, 174, 231), rgb(0, 136, 204));
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgb(13, 106, 178);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left-color: rgb(19, 126, 198);
+  border-right-color: rgb(19, 126, 198);
+  border-top-color: rgb(25, 146, 218);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  height: 22px;
+  line-height: 22.1000003814697px;
+  margin-left: 25px;
+  margin-top: 16px;
+  padding-bottom: 0px;
+  padding-left: 11.000599861145px;
+  padding-right: 11.000599861145px;
+  padding-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 47.4375px;
+}
+
+.main .hero{
+  height: inherit;
+  display: block;
+}
+
+.main .hero .title{
+  display: block;
+}
+
+.main .hero .title .thing{
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 95px;
+  font-weight: 200;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.main .hero .title .slogan{
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 45px;
+  font-weight: 200;
+  width: 525px;
+  margin: 0 auto;
+}
+
+/********** Domino **********/
+
+.domino{
+  margin: 0 auto;
+  background-color: #000;
+  background-color:rgb(55, 55, 55);
+  overflow: hidden;
+}
+
+.domino.horizontal{
+  margin-top: -80px;
+  height: 375px;
+  width: 750px;  
+  transform: perspective(50em) rotateX(70deg);
+}
+
+.domino.vertical{
+  margin-top: -240px;
+  height: 750px;
+  width: 375px;  
+  transform: perspective(50em) rotateX(70deg);
+}
+
+.domino .circle-filter{
+  background-color: rgba(0,0,0,1);
+  border-radius: 50%;
+
+}
+
+.domino.horizontal .circle-filter{
+  width: 900px;
+  height: 600px;
+  margin: -211px 0 0 -22px
+}
+
+.domino.vertical .circle-filter{
+  width: 700px;
+  height: 900px;
+  margin: -144px 0 0 -122px;
+}
+
+.domino .domino-face{
+  position: absolute;
+  height: 375px;
+  width: 375px;
+  top:0;
+  left:0;
+}
+
+.domino.horizontal .domino-face-1{
+  left: 0px;
+}
+.domino.vertical .domino-face-1{
+  left: 0px;
+}
+
+.domino.horizontal .domino-face-2{
+  left: 375px;
+}
+.domino.vertical .domino-face-2{
+  top: 375px;
+}
+
+.domino .domino-face-separator{
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 35px;
+}
+
+.domino.horizontal .domino-face-separator{
+  top: 40px;
+  left: 375px;
+  width: 4px;
+  height: 290px;
+}
+
+.domino.vertical .domino-face-separator{
+  top: 375px;
+  left: 40px;
+  height: 4px;
+  width: 290px;
+}
+
+.domino .domino-dots{
+  position: relative;
+}
+
+.domino .domino-dot{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+#dd0,#dd1,#dd2{top: 68px}
+#dd3,#dd4,#dd5{top: 162px}
+#dd6,#dd7,#dd8{top: 256px}
+#dd0,#dd3,#dd6{left: 68px}
+#dd1,#dd4,#dd7{left: 162px}
+#dd2,#dd5,#dd8{left: 256px}
+
+.domino-width{
+  height: 50px;
+  transform: perspective(50em) rotateX(-20deg);
+  background-color: rgb(105, 100, 100);
+}
+
+.domino-width.horizontal{
+  width: 952px;
+  margin: 0 auto;
+  margin-top: -107px;
+}
+
+.domino-width.vertical{
+  width: 665px;
+  margin: 0 auto;
+  margin-top: -147px;
+}
+
+.action-btns{
+  display: table;
+  margin: 0 auto;
+  margin-top: 60px;
+  list-style: none;
+  position: relative;
+}
+
+.action-btn{
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  color: rgb(0, 136, 204);
+  font-size: 23.2000007629395px;
+  padding: 0 20px;
+
+}
+
+.action-btn .text{
+  color: rgb(0, 136, 204);
+  font-size: 23.2000007629395px;
+  float:left;
+  margin-top: 5px;
+}
+
+.action-btn .text.real{
+  display: none;
+}
+
+.action-btn:hover .text.fake{
+  display: none;
+}
+
+.action-btn:hover .text.real{
+  display: block;
+}
+
+.action-btn img{
+  float: right;
+  margin-left: 5px;
+}
+
