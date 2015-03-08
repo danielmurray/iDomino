@@ -104,27 +104,5 @@ $(function() {
     return router.rerender();
   };
 
-  // Only fetch non-debug collections
-  window.Collections = [Dominos];
-  if (!DEBUG) {
-    var waitingOn = Collections.length;
-    var start = function() {
-      waitingOn = waitingOn - 1;
-      // console.log("Waiting on", waitingOn);
-      if (waitingOn == 0) {
-        Backbone.history.start();
-         // console.log("Started router", router);
-      }
-    }
-
-    for (var col in Collections) {
-      if (Collections[col].size() == 0) {
-        Collections[col].fetch({
-          success: start
-        });
-      }
-    }
-  } else {
-    Backbone.history.start();
-  }
+  Backbone.history.start();
 });

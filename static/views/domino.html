@@ -1,0 +1,54 @@
+<div class="domino <%=orientation%>">
+	<div class="circle-filter">
+
+	</div>
+	<div class="domino-face-1 domino-face">
+		<div class="domino-dots">
+<%
+	for( var i = 0; i< 9; i++){
+		if( face1Dots.indexOf(i) >= 0 ){
+%>
+			<div id="dd<%=i%>" class="domino-dot">
+
+			</div>
+<%
+		}
+	}
+%>
+		</div>
+	</div>
+	<div class="domino-face-separator"></div>
+	<div class="domino-face-2 domino-face">
+<%
+	for( var i = 0; i< 9; i++){
+		if( face2Dots.indexOf(i) >= 0 ){
+%>
+			<div id="dd<%=i%>" class="domino-dot">
+
+			</div>
+<%
+		}
+	}
+%>
+	</div>
+</div>
+<div class="domino-width <%=orientation%>">
+
+</div>
+<div class="action-btns">
+	<div id="rotate-left" class="rotate-left action-btn">
+		<div class='text fake'>Watch the film</div>
+		<div class='text real'>Rotate Left</div>
+		<img src="/static/imgs/play.png"></img>
+	</div>
+	<div id="generate" class="generate action-btn">
+		<div class='text fake'>Watch the ads</div>
+		<div class='text real'>Generate</div>
+		<img src="/static/imgs/play.png"></img>
+	</div>
+	<div id="rotate-right" class="rotate-right action-btn">
+		<div class='text fake'>Experience the keynote</div>
+		<div class='text real'>Rotate Right</div>
+		<img src="/static/imgs/play.png"></img>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 // Models
-var BaseModel = ModelWS.extend({
+var BaseModel = Backbone.Model.extend({
   defaults: function() {
     return {
       id: null,
