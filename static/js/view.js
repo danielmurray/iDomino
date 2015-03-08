@@ -27,7 +27,7 @@ var HomeView = BaseView.extend({
   },
   initialize: function() {
     var that = this;
-    this.template = loadTemplate("/static/views/nav.html");
+    this.template = loadTemplate("/iDomino/static/views/nav.html");
   },
   route: function(part, remaining) {
     
@@ -91,7 +91,7 @@ var DominoView = BaseView.extend({
   },
   initialize: function() {
     var that = this;
-    this.template = loadTemplate("/static/views/domino.html");
+    this.template = loadTemplate("/iDomino/static/views/domino.html");
     this.orientation = 'horizontal';    
     this.face1 = 6;    
     this.face2 = 6;
