@@ -23,7 +23,6 @@ html{
     font-weight: 200;
     color: whitesmoke;
     -webkit-user-select: none; 
-    overflow: hidden;
     margin: 0 auto;
     background-color: #ffffff;
 }
